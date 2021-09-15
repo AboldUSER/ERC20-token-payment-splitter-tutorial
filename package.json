@@ -1,0 +1,17 @@
+{
+  "name": "token-payment-splitter",
+  "version": "1.0.0",
+  "description": "Split ERC20 token payments among a group of accounts",
+  "author": "Martin Sterlicchi",
+  "license": "MIT",
+  "scripts": {
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.3.1",
+    "chai": "^4.3.4",
+    "hardhat": "^2.6.4"
+  }
+}
