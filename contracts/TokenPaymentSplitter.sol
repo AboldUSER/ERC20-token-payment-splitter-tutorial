@@ -13,10 +13,8 @@ abstract contract TokenPaymentSplitter {
     address internal paymentToken;
     uint256 internal _totalShares;
     uint256 internal _totalTokenReleased;
-
-    mapping(address => uint256) internal _shares;
     address[] internal _payees;
-
+    mapping(address => uint256) internal _shares;
     mapping(address => uint256) internal _tokenReleased;
 
     constructor(
