@@ -27,8 +27,9 @@ abstract contract TokenPaymentSplitter {
             "TokenPaymentSplitter: payees and shares length mismatch"
         );
         require(payees.length > 0, "TokenPaymentSplitter: no payees");
-        for (uint256 i = 0; i < payees.length; i++)
+        for (uint256 i = 0; i < payees.length; i++) {
             _addPayee(payees[i], shares_[i]);
+        }
         paymentToken = _paymentToken;
     }
 
